@@ -14,4 +14,6 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
+// Todoコンポーネントからthis.props.todoでstateのtodoを参照できる
+// Todoコンポーネントからthis.props.addTodoでreducerをdispatch(呼ぶこと)することができる
 export default connect(mapStateToProps, mapDispatchToProps)(Todo)
