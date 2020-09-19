@@ -4,3 +4,10 @@ export const addTodo = (todo) => {
     payload: { todo: todo }
   }
 }
+
+export const inputTodo = (todo) => {
+  return {
+    type: 'INPUT_TODO',
+    payload: { todo: todo }
+  }
+}
